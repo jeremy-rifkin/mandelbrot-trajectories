@@ -22,7 +22,7 @@ with an algorithm that can quantify apparent "shapes". Check out the inter-activ
 The result of the algorithm is this, displaying the various regions that will produce various
 shapes:
 
-![](gui-dist/render.png)
+![](render.png)
 
 ### Project layout:
 
