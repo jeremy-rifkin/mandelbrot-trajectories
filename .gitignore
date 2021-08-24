@@ -8,4 +8,5 @@ src/*.js
 gui-dist/*
 !gui-dist/index.html
 !render.png
+!render.bmp
 !screenshots/*.png

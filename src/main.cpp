@@ -48,7 +48,7 @@ constexpr float h_start = 200;
 constexpr float h_stop = 330;
 
 constexpr const char* color_output = "gui/colors.ts";
-constexpr const char* render_output = "render.png";
+constexpr const char* render_output = "render.bmp";
 
 pixel_t colors[max_period];
 [[gnu::constructor]] void init_colors() {

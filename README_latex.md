@@ -42,6 +42,7 @@ Kickstart:
 npm i
 make
 ./bin/mandelbrot.exe
+convert render.bmp render.png
 webpack
 cp -rv render.png screenshots gui-dist
 ```
