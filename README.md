@@ -20,3 +20,25 @@ The result of the algorithm is this, displaying the various regions that will pr
 shapes:
 
 ![](gui-dist/render.png)
+
+### Project layout:
+
+General overview:
+
+```
+bin         - compiled binaries, object files, and dependency files
+gui         - typescript and sass gui code
+gui-dist    - html code and compiled js
+screenshots - trajectory screenshots used on the web page and README
+src         - C++ render code
+```
+
+Kickstart:
+
+```bash
+npm i
+make
+./bin/mandelbrot.exe
+webpack
+cp -rv render.png screenshots gui-dist
+```

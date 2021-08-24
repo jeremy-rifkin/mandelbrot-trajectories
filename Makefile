@@ -3,7 +3,7 @@ TARGET_EXEC := mandelbrot.exe
 BUILD_DIR := bin
 SRC_DIRS := src
 
-all: $(BUILD_DIR)/$(TARGET_EXEC) README.md gui-dist/main.js
+all: $(BUILD_DIR)/$(TARGET_EXEC) README.md
 
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c)
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
@@ -55,9 +55,6 @@ $(BUILD_DIR)/%.c.o: %.c
 $(BUILD_DIR)/%.cpp.o: %.cpp
 	$(MKDIR_P) $(dir $@)
 	$(CPP) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
-
-gui-dist/main.js:
-	webpack
 
 README.md: README_latex.md
 	markdown-math-gh-compiler README_latex.md -o README.md
