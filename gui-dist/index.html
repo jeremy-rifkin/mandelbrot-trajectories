@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mandelbrot Trajectories</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
+	</head>
+	<body>
+		<div id="main_text">
+			<div class="text">
+				<p>The Mandelbrot is defined as points $c$ for which the iteration of
+				   $z_{n+1} = z_{n}^2 + c$ does escape towards infinity.</p>
+				<p>When complex numbers are multiplied, they appear to rotate on the complex plane.
+				   Tracing the trajectories can lead to cool shapes - spirals and stars.</p>
+				<div class="gallery">
+					<img src="screenshots/1.png">
+					<img src="screenshots/1 a.png">
+					<img src="screenshots/1 b.png">
+					<img src="screenshots/3.png">
+					<img src="screenshots/4.png">
+					<img src="screenshots/4 a.png">
+					<img src="screenshots/5.png">
+					<img src="screenshots/10.png">
+					<img src="screenshots/12.png">
+					<img src="screenshots/13.png">
+					<img src="screenshots/circle.png">
+				</div>
+				<p>Play around with these shapes yourself down below.</p>
+				<p>How many points do these spirals/stars have based off of their starting
+				   location?</p>
+				<p>When investigating algorithms to
+				   <a href="https://github.com/jeremy-rifkin/mandelbrot-orbits" target="_blank">
+				   identify periods of orbits in the Mandelbrot</a> I came up with an algorithm that
+				   can quantify apparent "shapes". Below is an interactive plotter of the Mandelbrot
+				   as well as the color swatches corresponding to how many points to expect,
+				   roughly. In a region colored as a "5", you will see a 5-pointed star when
+				   plotting trajectories starting near the center of the region - points not near
+				   the center won't be quite as clean.</p>
+			</div>
+			<div id="colors_display"></div>
+		</div>
+		<div id="interactive">
+			<img id="i" src="render.png"/>
+			<canvas id="c"></canvas>
+		</div>
+		<footer>
+			Jeremy Rifkin | <a href="https://github.com/jeremy-rifkin/mandelbrot-trajectories" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
+		</footer>
+		<script src="main.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				},
+				svg: {
+					fontCache: 'global'
+				}
+			};
+		</script>
+	</body>
+</html>
