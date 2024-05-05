@@ -2,7 +2,7 @@
 
 This is an extension / fork of a [previous project](https://github.com/jeremy-rifkin/mandelbrot-orbits).
 
-The Mandelbrot is defined as points <img alt="c" src="https://render.githubusercontent.com/render/math?math=c" style="transform: translateY(20%);" /> for which the iteration of <img alt="z_{n+1} = z_{n}^2 + c" src="https://render.githubusercontent.com/render/math?math=z_%7Bn%2B1%7D%20%3D%20z_%7Bn%7D%5E2%20%2B%20c" style="transform: translateY(20%);" /> does
+The Mandelbrot is defined as points $c$ for which the iteration of $z_{n+1} = z_{n}^2 + c$ does
 escape towards infinity.
 
 When complex numbers are multiplied, they appear to rotate on the complex plane. Tracing the
